@@ -9,7 +9,7 @@ readline.createInterface({
 //'line' is you basic string
 }).on('line', function(line) {
 //change your string here, like an example. The example shows a SQL request to transfer links to the home page
-   let exp = (`('${line}', 'http://odessamedia.net'),\n`);
+   let exp = (`('${line}', 'http://example.domen'),\n`);
    fs.appendFile("output.txt", exp)  
 });
 
